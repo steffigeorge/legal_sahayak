@@ -1,0 +1,164 @@
+
+/* NAvbar */
+
+.container{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar{
+  padding: 2rem;
+  background-color: transparent; 
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.navbar .logo{
+  float: left;
+  color: #cc8800;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+.navbar .logo:hover{
+  color: white;
+}
+
+.navbar .nav-items{
+  float: right;
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  transition: color 0.3s ease-in-out; 
+}
+
+.navbar.scrolled {
+  background-color: white; 
+  position: sticky; 
+  top: 0; 
+  z-index: 100;
+}
+
+.navbar.scrolled a {
+  color: black; 
+}
+
+
+.navbar a:hover{
+  border-bottom: 0.1rem solid white;
+}
+
+.navbar .nav-item{
+  display: inline-block;
+  list-style: none;
+  padding: 1.5rem;  
+}
+
+.navbar::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header {
+  position: relative;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url('/public/background_img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+}
+
+.header-content p {
+  margin-top: 2rem;
+  color: #cc8800;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+.about-area {
+  padding: 70px 0;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-heading {
+  float: left; /* Float left */
+  width: 50%; /* 50% width for left column */
+}
+
+.about-heading h4 {
+  color: #cc8800;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.about-heading h2 {
+  background: rgba(0, 0, 0, 0) url("/public/bg.png") no-repeat scroll left bottom;
+  color: #012f5d;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.about-image {
+  float: right; 
+  width: 50%; 
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 95%;  
+  display: block;
+  margin: 10rem 8rem;
+  padding: 20px 0; 
+
+}
+
+
+.about-heading::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-heading p {
+  margin-top: 1.5rem;
+  color: #5a5a5a;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+}
