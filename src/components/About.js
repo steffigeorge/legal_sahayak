@@ -7,8 +7,8 @@ function About() {
             <div className="row">
                 <div className="row-items">
 							<div class="heading-part about-heading">
-								<h4>about</h4>
-								<h2>Legal Sahayak</h2>
+								
+								<h4>About Us</h4>
                                 <p>
                                                                 Welcome to Legal Sahayak, your trusted partner on the path to legal empowerment. We are committed to breaking down the barriers that hinder access to justice for all citizens in India, especially those from marginalized communities.
                                 <br />

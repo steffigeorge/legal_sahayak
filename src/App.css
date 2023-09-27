@@ -119,6 +119,9 @@
 }
 
 .about-heading h4 {
+  background: rgba(0, 0, 0, 0) url("/public/bg.png") no-repeat scroll left bottom;
+  background-position: 100px;
+  background-position-y: 20px;
   color: #cc8800;
   font-size: 3rem;
   font-weight: 600;
@@ -126,7 +129,6 @@
 }
 
 .about-heading h2 {
-  background: rgba(0, 0, 0, 0) url("/public/bg.png") no-repeat scroll left bottom;
   color: #012f5d;
   font-size: 24px;
   font-weight: 300;
