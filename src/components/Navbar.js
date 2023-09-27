@@ -39,7 +39,7 @@ function Navbar() {
             <Link to='/news'>News</Link>
           </li>
           <li className="nav-item">
-            <Link to='/chatbot'>Chatbot</Link>
+            <Link to='/chatbot' className='connect-button'>Conect with Lawyer</Link>
           </li>
         </ul>
       </div>

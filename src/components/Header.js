@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import '../App.css';
-import Navbar from './Navbar';
-import About from './About';
+import React, { useEffect, useState } from "react";
+import "../App.css";
+import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 function Header() {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const fullText = "Welcome to our Legal Awareness Platform - Legal Sahayak";
   const typingSpeed = 50;
 
@@ -26,11 +26,25 @@ function Header() {
   }, []);
 
   return (
-    <div className='header'>
+    <div className="header">
       <Navbar />
       <div className="header-content">
         <h1>{text}</h1>
-        <p>We empower all citizens with accessible legal knowledge and guidance, promoting awareness and improving access to justice.</p>
+        <p>
+          We empower all citizens with accessible legal knowledge and guidance,
+          promoting awareness and improving access to justice.
+        </p>
+        <p className="chat-head">
+          Have a legal question or need information? Ask us!
+        </p>
+        <Link to="/chatbot" className="bot-button">
+          <span>Get Legal Answers from</span>
+          <img
+            src="../chatbot.png"
+            alt="Chatbot Image"
+            className="chatbot-image"
+          />
+        </Link>
       </div>
     </div>
   );
